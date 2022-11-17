@@ -53,7 +53,7 @@ public class Payroll {
 					double totalSales = sc.nextDouble();
 					emp = new CommissionEmployee(fname, lname, dob, gender, fixed, totalSales);
 					
-				} else if (employeeCode.contentEquals("X")) {
+				} else if (employeeCode.equals("X")) {
 					
 					System.out.println("Exiting the program...");
 					globalType = "x";
@@ -67,20 +67,21 @@ public class Payroll {
 				
 				System.out.println("Do you want to add another employee(y/n)?");
 				String keepGoing = sc.next();
-				if(keepGoing.contentEquals("n")) {
+				if(keepGoing.equals("n")) {
 					globalType = "x";
 				}
-				if(keepGoing.contentEquals("y")) {
+				if(keepGoing.equals("y")) {
 					globalType = ""; // reset to continue
 				}
 				
-		} while( !globalType.contentEquals("x")  );
+		} while( !globalType.equals("x")  );
 		
 		// Print all Employee information using enhanced for loop
 		// DOES NOT PRINT
 //		for (Employee e : emps) {
 //			e.toString();
 //		}
+		System.out.println("why it won't execute?");
 		
 		Employee temp;
 		for(int i = 0; i < emps.size(); i++) {
@@ -97,8 +98,6 @@ public class Payroll {
 			System.out.println("toString: " + temp.toString());
 			j++;
 		}
-		
-		
 		
 		//Display the total number of processed employees.
 		System.out.println("Total number of processed employees:    " + emps.size() );
