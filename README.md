@@ -3,7 +3,7 @@ Intro to Java Programming, Winter 2022, Winter 2023
 
 #Topics
 - Data Types (since Java is a strongly typed language)
-- - Arithmetic calculations
+    - Arithmetic calculations
 - Conditionals and swtich cases (if, else if, else)
 - Arrays and loops (includes example with Math.random, check class ProductOfNumbersInArray)
 - Classes: Abstract and concrete
